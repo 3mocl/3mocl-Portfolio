@@ -28,7 +28,7 @@ h1, h2, h4, h3, h5, p{
 
 #ver{
     position: absolute;
-    bottom: 7.5%;
+    bottom: 8.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
