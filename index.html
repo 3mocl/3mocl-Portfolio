@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clive Moras Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/icons/favicon.ico">
+    <script src="/JS/animation.js"defer></script>
+    <script src="/JS/project-slideshow.js"defer></script>
+    <script src="/JS/color-mode.js"defer></script>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/animation.css">
+    <link rel="stylesheet" href="/CSS/color-mode.css">    
+    <style> 
+        .prevent-select {
+          -webkit-user-select: none; /* Safari */
+          -ms-user-select: none; /* IE 10 and IE 11 */
+          user-select: none; /* Standard syntax */
+        }
+ </style>
+</head>
+<body>
+    <div id="hero">
+        <!-- <p >ver 1.0.0</p> -->
+        <h4>Hey there! I'm</h4>
+        <h1 >Clive Moras</h1>
+        <p >Full-Stack Developer</p>
+        <!--Block, Element, Modifier-->
+        <div id="hero__animation" >
+            <div id="hero__animation__img">
+
+            </div>
+        </div>
+    </div>
+    <nav id = "grid">
+        <div id = "grid__tl">
+         <div id="grid__tl__btn" class="prevent-select">About</div>   
+         <div id="grid__tl__content" class="prevent-select">
+            <div class="cards"> 
+                <div class="cards__content">
+                    <article>
+                       <img src="./Assets/icons/education.png" alt="Education Icon"
+                       class="icon"
+                       /> 
+                       <h2 class="prevent-select">Education</h2>
+                       <p class="prevent-select">St. Norbert College    
+                       </p>
+                    </article>
+                    <p class="cards__content__text prevent-select">
+                        Pursuing a double major in Computer Science & Data Science
+                    </p>
+                </div>
+                <div class="cards__content">
+                    <article>
+                       <img src="./Assets/icons/experience.png" alt="Experience Icon"
+                       class="icon"
+                       /> 
+                       <h2 class="prevent-select">Experience</h2>
+                       <p class="prevent-select">Wisconsin DNR <br/> 
+                        Lake Michigan <br/> 
+                        Research Fellow</p>
+                    </article>
+                    <p class="cards__content__text prevent-select">
+                        Working on a project to develop an application visualizing critical pollution metrics around the 
+                        Great Lakes instrumental in monitoring environmental health in the Areas of Concern (AOC's) and supporting 
+                        the implementation of $80 million in restoration initiatives.
+                    </p>
+                </div>
+            </div>
+         </div>
+        </div>
+        <div id = "grid__tr">
+         <div id="grid__tr__btn" class="prevent-select">Skills</div>   
+         <div id="grid__tr__content" class="prevent-select">
+            <div class= "experience">
+                <article class = "experience__skill">
+                    <h2 class="prevent-select">Frontend Development</h2>
+                    <div><img src="./Assets/icons/checkmark.png" alt="Check Mark Icon"
+                        class="icon"
+                        /> 
+                        <div>
+                            <h2>HTML</h2>
+                            <P>Beginner</P>
+                           </div>
+                    </div> 
+                    <div><img src="./Assets/icons/checkmark.png" alt="Check Mark Icon"
+                        class="icon"
+                        /> 
+                        <div>
+                            <h2>CSS</h2>
+                            <P>Beginner</P>
+                           </div>
+                    </div> 
+                    <div><img src="./Assets/icons/checkmark.png" alt="Check Mark Icon"
+                        class="icon"
+                        /> 
+                        <div>
+                            <h2>JAVASCRIPT</h2>
+                            <P>Intermediate</P>
+                           </div>
+                    </div> 
+                    </article>
+                <article class = "experience__skill">
+                    <h2 class="prevent-select">Backend Development</h2>
+                    <div><img src="./Assets/icons/checkmark.png" alt="Check Mark Icon"
+                        class="icon"
+                        /> 
+                        <div>
+                            <h2>C++</h2>
+                            <P>Advanced</P>
+                           </div>
+                    </div> 
+                    <div><img src="./Assets/icons/checkmark.png" alt="Check Mark Icon"
+                        class="icon"
+                        /> 
+                        <div>
+                            <h2>Python</h2>
+                            <P>Beginner</P>
+                           </div>
+                    </div> 
+                    </article>
+            </div>
+         </div>
+        </div>
+        <div id="grid__bl">
+            <div id="grid__bl__btn" class="prevent-select">Projects</div>
+            <div id="grid__bl__content" class="prevent-select">
+                <div id="grid__bl__content__projects">
+                <div class="project p-1">
+                    <img class="project__img project-1"
+                     src="Assets/portfolio-projects/project-1-dark.png" alt="Project 1"
+                     />
+                    <h2 class="project__title">Project One</h2>
+                    <button class="btn"
+                    >Demo</button>
+                    <button class="btn" onclick="window.location.href='https://github.com/3mocl'"
+                    >GitHub</button>
+                </div>
+                <div class="project p-2">
+                    <img class="project__img project-2"
+                     src="Assets/portfolio-projects/project-2-dark.png" alt="Project 2"
+                     />
+                    <h2 class="project__title">Project Two</h2>
+                    <button class="btn"
+                    >Demo</button>
+                    <button class="btn"
+                    >GitHub</button>
+                </div>
+                <!-- <div class="project p-3">
+                    <img class="project__img project-3"
+                     src="Assets/portfolio-projects/project-3-dark.png" alt="Project 3"
+                     />
+                    <h2 class="project__title">Project Three</h2>
+                    <button class="btn" 
+                    >Demo</button>
+                    <button class="btn" 
+                    >GitHub</button>
+                </div> -->
+                <button class = "arrow" onclick="navigateProject(-1)">
+                    &#10094;
+                </button>
+                <button class = "arrow" onclick="navigateProject(1)">
+                    &#10095;
+                </button>
+                </div>
+            </div>
+        </div>
+        <div id="grid__br">
+            <div id="grid__br__btn" class="prevent-select">Contact</div>
+            <div id="grid__br__content" class="prevent-select">
+                <h5 class = "contact-text">Get In Touch!</h5>
+                <h2 class = "contact-text">Contact Me</h2>
+                <div>
+                    <button class = "btn btn-contact" onclick = "window.location.href='mailto:03mocl@gmail.com'">
+                        Email
+                    </button>
+                    <button class = "btn btn-contact" onclick = "window.location.href='https://www.linkedin.com/in/3mocl/'">
+                        LinkedIn
+                    </button>
+                    <button class = "btn btn-contact" onclick = "window.location.href='https://github.com/3mocl'">
+                        GitHub
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="ver" class="prevent-select"><p >ver 1.0.0</p></div>
+    <div id="color-mode">
+        <div id="toggle-button" class="icon"></div>
+    </div>
+</body>
+</html>
+
+<!-- 2 Projects, Not 3 -->
