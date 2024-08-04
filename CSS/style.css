@@ -215,7 +215,7 @@ article h2, article p{
 .experience__skill div{
     display: flex;
     align-items: center;
-    width: 13.5rem;
+    width: 16rem;
 }
 
 .experience__skill div img {
