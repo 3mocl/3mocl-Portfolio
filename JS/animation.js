@@ -19,7 +19,7 @@ const brContent = document.querySelector("#grid__br__content");
 
 const projectOne = document.querySelector(".p-1");
 const projectTwo = document.querySelector(".p-2");
-// const projectThree = document.querySelector(".p-3");
+const projectThree = document.querySelector(".p-3");
 
 // Defining colors and positions
 const bgColor = "var(--bg)";
@@ -152,8 +152,8 @@ function handleWindowResize(){
                 projectOne.style.margin = "auto auto 0.5rem"
                 projectTwo.style.width = "70%"
                 projectTwo.style.margin = "auto auto 0.5rem"
-                // projectThree.style.width = "70%"
-                // projectThree.style.margin = "auto auto 0.5rem"
+                projectThree.style.width = "70%"
+                projectThree.style.margin = "auto auto 0.5rem"
 
             }else if(window.innerWidth <= 1100) {
                 blActive = "translateX(0) translateY(0)";
@@ -175,8 +175,8 @@ function handleWindowResize(){
                 projectOne.style.margin = "auto auto 0.5rem"
                 projectTwo.style.width = "40%"
                 projectTwo.style.margin = "auto auto 0.5rem"
-                // projectThree.style.width = "40%"
-                // projectThree.style.margin = "auto auto 0.5rem"
+                projectThree.style.width = "40%"
+                projectThree.style.margin = "auto auto 0.5rem"
             }else {
                 blActive = "translateX(10vw) translateY(7vh)";
                 blContent.style.transform = "translateX(10vw) translateY(7vh)";
@@ -187,7 +187,7 @@ function handleWindowResize(){
 
                 projectOne.style.width = "100%"
                 projectTwo.style.width = "100%"
-                // projectThree.style.width = "100%"
+                projectThree.style.width = "100%"
                 
             }
 
