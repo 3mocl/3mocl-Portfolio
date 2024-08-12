@@ -185,9 +185,16 @@ function handleWindowResize(){
                 blContent.style.top = "40vh";
                 blContent.style.display = "block";
 
+                // projectOne.style.width = "100%"
+                // projectTwo.style.width = "100%"
+                // projectThree.style.width = "100%"
+
                 projectOne.style.width = "100%"
+                projectOne.style.margin = "auto auto 0.5rem"
                 projectTwo.style.width = "100%"
+                projectTwo.style.margin = "auto auto 0.5rem"
                 projectThree.style.width = "100%"
+                projectThree.style.margin = "auto auto 0.5rem"
                 
             }
 
